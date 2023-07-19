@@ -91,8 +91,60 @@ img.group {
 .second-section {
 	display: flex;
 	gap: 78px;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
 
+/* card section */
+
+.cards {
+	height: 67vh;
+	width: 20%;
+}
+.card-section {
+	display: flex;
+	/* text-align: center; */
+	margin: auto;
+	/* width: 900px; */
+	gap: 13px;
+	margin: 16%;
+	margin-top: 10%;
+}
+.cards {
+	height: 67vh;
+	width: 28%;
+}
+.card {
+	width: 100%;
+}
+
+.third-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+img.third {
+    width: 74%;
+}
+img.third {
+    width: 81%;
+}
+img.thirda {
+    width: 72%;
+    position: relative;
+    margin-left: 59%;
+    margin-top: 106%;
+}
+span.color {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.third-content {
+    width: 280px;
+    text-align: right;
+    padding-left: 16%;
+}
 
 @media screen and (min-width: 320px) and  (max-width: 480px) {
     .nav-bar{
@@ -111,6 +163,7 @@ img.group {
     }
     .second-section{
         flex-direction: column;
+        gap: 33%;
     }
     img.group {
         width: 100%;
@@ -127,5 +180,45 @@ img.group {
         font-size: 12px;
         width: 74%;
     }
+    .card-section {
+        flex-direction: column;
+        /* width: 100%; */
+        margin: auto;
+        align-items: center;
+    }
+    .cards {
+        width: 66%;
+        /* overflow: hidden; */
+        gap: 4px;
+        display: flex;
+        height: 100%;
+    }
+    .third-section {
+        flex-direction: column;
+        margin: auto;
+        width: 210px;
+    }
+    img.third {
+        width: 15rem;
+        /* position: absolute; */
+        /* margin-top: 6%; */
+    }
+    img.thirda {
+        width: 6rem;
+        position: absolute;
+        margin-top: 163px;
+        margin-left: -32%;
+    }
+
+    .third-content {
+        /* width: 280px; */
+        /* text-align: right; */
+        /* padding-left: 16%; */
+        text-align: center;
+        line-height: 26px;
+        margin-top: 36%;
+        /* margin: auto; */
+    }
+    
     
 }
