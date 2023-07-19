@@ -72,18 +72,26 @@ h2.nono{
     font-size: 34px; 
 }
 img.group {
-    width: 89%;
-    margin-left: 21%;
-    /* justify-content: space-around; */
+	width: 76%;
+	margin-left: 21%;
+	/* justify-content: space-around; */
 }
 .content {
 	text-align: right;
-	width: 41%;
+	width: 17%;
 	margin: auto;
 	margin-right: 14%;
 	font-size: 12px;
+	/* line-height: 33px; */
+	/* gap: 64px; */
 }
-
+.second-section {
+	display: flex;
+}
+.second-section {
+	display: flex;
+	gap: 78px;
+}
 
 
 @media screen and (min-width: 320px) and  (max-width: 480px) {
