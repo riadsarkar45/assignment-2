@@ -85,6 +85,22 @@ img.group {
 	/* line-height: 33px; */
 	/* gap: 64px; */
 }
+.text-context {
+    /* text-align: center; */
+    list-style: none;
+    /* line-height: 41px; */
+}
+h2.header {
+    text-align: center;
+}
+button.tn {
+    background-color: #F948B2;
+    border: 0;
+    padding: 15px;
+    margin: 10px;
+    color: white;
+    border-radius: 5px;
+}
 .second-section {
 	display: flex;
 }
@@ -117,10 +133,61 @@ img.group {
 	width: 100%;
 }
 
+/* Apply styles to the card container */
+.cards {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Apply styles to the image inside the card container */
+  .card {
+    position: relative;
+    overflow: hidden; /* Add an overflow to hide the play icon overflow */
+    transition: transform 0.3s;
+  }
+  
+  /* Apply styles to the "play now" text and play icon inside the card container */
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust the background color and transparency as needed */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transition: opacity 0.3s;
+    pointer-events: none; /* Ensure the overlay doesn't capture mouse events */
+  }
+  
+  /* Apply styles to the "play now" text inside the card container */
+  .play-text {
+    display: block;
+  }
+  
+  /* Add the play icon using the ::before pseudo-element */
+  .middle::before {
+    content: '\25B6'; /* Unicode character for the play icon (right-pointing triangle) */
+    font-size: 30px; /* Adjust the font size of the play icon */
+    display: block;
+    margin-bottom: 10px; /* Adjust the spacing between icon and text as needed */
+  }
+  
+  /* Add the hover effect */
+  .cards:hover .middle {
+    opacity: 1;
+  }
+  
+
 .third-section {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-right: 7%;
 }
 img.third {
     width: 74%;
@@ -145,8 +212,81 @@ span.color {
     text-align: right;
     padding-left: 16%;
 }
-
-@media screen and (min-width: 320px) and  (max-width: 480px) {
+.bottom-section {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+span.hover1 {
+    margin-left: 99px;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+.down {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+    margin-left: 78px;
+}
+span.hov {
+    display: flex;
+    align-items: center;
+}
+.hov:hover{
+    border: 1px solid  #F948B2;
+    padding: 4px;
+    border-radius: 3px;
+}
+.footer{
+    background: #0B0223;
+    height: 100vh;
+    width: 100%;
+    line-height: 15px;
+}
+.footer-list {
+    color: white;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    width: 34%;
+    list-style: none;
+    gap: 10px;
+}
+.social {
+    color: white;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    width: 19%;
+    list-style: none;
+    gap: 64px;
+    font-size: 37px;
+}
+.logos {
+    width: 15%;
+    margin: auto;
+    display: flex;
+    color: white;
+    gap: 10px;
+    align-items: center;
+    /* margin-top: 45px; */
+    padding: 71px;
+}
+.footer-lists {
+    color: white;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    width: 39%;
+    list-style: none;
+    gap: 10px;
+}
+@media screen and (min-width: 320px) and  (max-width: 766px) {
     .nav-bar{
         flex-direction: column;
         line-height: 60px;
@@ -215,10 +355,134 @@ span.color {
         /* text-align: right; */
         /* padding-left: 16%; */
         text-align: center;
-        line-height: 26px;
-        margin-top: 36%;
+        /* line-height: 26px; */
+        /* margin-top: 36%; */
         /* margin: auto; */
+        margin: 35px;
+    }
+    .footer{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .footer-lists {
+        color: white;
+        text-align: center;
+        display: flex;
+        margin: auto;
+        width: 39%;
+        list-style: none;
+        gap: 10px;
+    }
+
+    .social {
+        color: white;
+        text-align: center;
+        display: flex;
+        margin: auto;
+        width: 19%;
+        list-style: none;
+        gap: 64px;
+        font-size: 37px;
     }
     
+}
+@media screen and (max-width: 768px) {
+    .nav-bar{
+        display: flex;
+        line-height: 60px;
+        text-align: center;
+        margin: 60px;
+
+    }
+    .menus{
+        display: block;
+    }
+    .main-content{
+        flex-direction: column-reverse;
+        margin: auto;
+    }
+    .second-section{
+        flex-direction: column;
+        gap: 33%;
+    }
+    img.group {
+        width: 100%;
+        margin-left: auto;
+    }
+    img.banner {
+        width: 100%;
+        /* margin-left: 18%; */
+        margin: auto;
+    }
+    .content {
+        text-align: center;
+        margin: auto;
+        font-size: 12px;
+        width: 74%;
+    }
+    .card-section {
+        flex-direction: column;
+        /* width: 100%; */
+        margin: auto;
+        align-items: center;
+    }
+    .cards {
+        width: 66%;
+        /* overflow: hidden; */
+        gap: 4px;
+        display: flex;
+        height: 100%;
+    }
+    .third-section {
+        flex-direction: column;
+        margin: auto;
+        width: 210px;
+    }
+    img.third {
+        width: 15rem;
+        /* position: absolute; */
+        /* margin-top: 6%; */
+    }
+    img.thirda {
+        width: 6rem;
+        position: absolute;
+        margin-top: 163px;
+        margin-left: -32%;
+    }
+
+    .third-content {
+        /* width: 280px; */
+        /* text-align: right; */
+        /* padding-left: 16%; */
+        text-align: center;
+        /* line-height: 26px; */
+        /* margin-top: 36%; */
+        /* margin: auto; */
+        margin: 35px;
+    }
+    .footer{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .footer-lists {
+        color: white;
+        text-align: center;
+        display: flex;
+        margin: auto;
+        width: 39%;
+        list-style: none;
+        gap: 10px;
+    }
+
+    .social {
+        color: white;
+        text-align: center;
+        display: flex;
+        margin: auto;
+        width: 19%;
+        list-style: none;
+        gap: 64px;
+        font-size: 37px;
+    }
     
 }
