@@ -37,6 +37,11 @@ span.social {
     padding: 7px 15px 7px 14px;
     border-radius: 6px;
 }
+span.you {
+    background-color: lightgray;
+    padding: 4px;
+    border-radius: 4px;
+}
 .main-content {
     display: flex;
     align-items: top;
