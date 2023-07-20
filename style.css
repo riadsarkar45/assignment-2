@@ -248,8 +248,9 @@ span.hover1 {
     margin-left: 78px;
 }
 span.hov {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
+	gap: 8px;
 }
 
 .footer{
