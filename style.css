@@ -42,6 +42,26 @@ span.you {
     padding: 4px;
     border-radius: 4px;
 }
+button.sign {
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    border: 0;
+    color: white;
+    padding: 8px 18px 9px 19px;
+}
+.btns {
+    display: flex;
+    gap: 14px;
+    margin-top: 18px;
+    align-items: center;
+}
+button.go {
+    border-radius: 48px;
+    background: #4EC5F7;
+    border: 0;
+    color: white;
+    padding: 8px 18px 9px 19px;
+}
 .main-content {
     display: flex;
     align-items: top;
@@ -260,7 +280,7 @@ span.hov {
 
 .footer{
     background: #0B0223;
-    height: 86vh;
+    height: 96vh;
     line-height: 15px;
 }
 .circle {
